@@ -1,9 +1,5 @@
-import React, {Component} from 'react'
+export { ThemeProvider } from 'styled-components'
 
-export default class extends Component {
-  render() {
-    return <div>
-      <h2>Welcome to React components</h2>
-    </div>
-  }
-}
+export { theme } from './assets/theme'
+
+export { default as Button } from './components/buttons'

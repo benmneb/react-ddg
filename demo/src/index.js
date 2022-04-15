@@ -1,15 +1,18 @@
-import React, {Component} from 'react'
-import {render} from 'react-dom'
+import React from 'react'
+import { render } from 'react-dom'
 
-import Example from '../../src'
+import { ThemeProvider, theme } from '../../src'
 
-export default class Demo extends Component {
-  render() {
-    return <div>
-      <h1>react-ddg Demo</h1>
-      <Example/>
-    </div>
-  }
+import Demo from './demo'
+
+import './index.css' // Set the font
+
+export default function DemoApp() {
+	return (
+		<ThemeProvider theme={theme}>
+			<Demo />
+		</ThemeProvider>
+	)
 }
 
-render(<Demo/>, document.querySelector('#demo'))
+render(<DemoApp />, document.querySelector('#demo'))
