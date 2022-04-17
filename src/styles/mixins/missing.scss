@@ -1,0 +1,79 @@
+$experimental-support-for-webkit: true;
+$experimental-support-for-mozilla: true;
+$experimental-support-for-opera: true;
+$experimental-support-for-microsoft: true;
+$experimental-support-for-khtml: false;
+
+@mixin experimental(
+	$property,
+	$value,
+	$moz: $experimental-support-for-mozilla,
+	$webkit: $experimental-support-for-webkit,
+	$o: $experimental-support-for-opera,
+	$ms: $experimental-support-for-microsoft,
+	$khtml: $experimental-support-for-khtml,
+	$official: true
+) {
+	@if $webkit and $experimental-support-for-webkit {
+		-webkit-#{$property}: $value;
+	}
+	@if $khtml and $experimental-support-for-khtml {
+		-khtml-#{$property}: $value;
+	}
+	@if $moz and $experimental-support-for-mozilla {
+		-moz-#{$property}: $value;
+	}
+	@if $ms and $experimental-support-for-microsoft {
+		-ms-#{$property}: $value;
+	}
+	@if $o and $experimental-support-for-opera {
+		-o-#{$property}: $value;
+	}
+	@if $official {
+		#{$property}: $value;
+	}
+}
+
+// Transitions
+
+// example: @include single-transition(background, 1s, ease-in-out, 0);
+
+@mixin single-transition(
+	$property: all,
+	$duration: 300ms,
+	$timing-function: ease-in-out,
+	$delay: 0
+) {
+	-webkit-transition: $property $duration $timing-function $delay;
+	-moz-transition: $property $duration $timing-function $delay;
+	-o-transition: $property $duration $timing-function $delay;
+	transition: $property $duration $timing-function $delay;
+}
+
+// example: @include double-transition(background, 1s, ease-in-out, 0, opacity, .1s, ease-in-out, 0);
+
+@mixin double-transition(
+	$property1,
+	$duration1,
+	$timing-function1,
+	$delay1,
+	$property2,
+	$duration2,
+	$timing-function2,
+	$delay2
+) {
+	-webkit-transition: $property1 $duration1 $timing-function1 $delay1,
+		$property2 $duration2 $timing-function2 $delay2;
+	-moz-transition: $property1 $duration1 $timing-function1 $delay1,
+		$property2 $duration2 $timing-function2 $delay2;
+	-o-transition: $property1 $duration1 $timing-function1 $delay1,
+		$property2 $duration2 $timing-function2 $delay2;
+	transition: $property1 $duration1 $timing-function1 $delay1,
+		$property2 $duration2 $timing-function2 $delay2;
+}
+
+@mixin box-shadow($top, $left, $blur, $color, $inset: '') {
+	-webkit-box-shadow: $top $left $blur $color #{$inset};
+	-moz-box-shadow: $top $left $blur $color #{$inset};
+	box-shadow: $top $left $blur $color #{$inset};
+}

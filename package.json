@@ -24,16 +24,18 @@
 	},
 	"devDependencies": {
 		"nwb": "0.25.x",
+		"nwb-sass": "^0.10.2",
 		"react": "^18.0.0",
 		"react-dom": "^18.0.0",
-		"styled-components": "^5.3.5"
+		"sass": "^1.50.0",
+		"sass-loader": "^12.6.0"
 	},
 	"author": "benmneb@duck.com",
 	"homepage": "",
 	"license": "MIT",
 	"repository": "",
 	"keywords": [
-		"react-component",
+		"react component library",
 		"duckduckgo",
 		"duckduckgo styles"
 	]
