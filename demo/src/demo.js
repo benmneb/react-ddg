@@ -1,5 +1,6 @@
 import React from 'react'
 
+import { ColorPalette } from './components'
 import { Alert, Button, ButtonGroup, Text } from '../../src'
 
 export default function Demo() {
@@ -76,6 +77,10 @@ export default function Demo() {
 			<Text color="papayawhip">Custom color from string</Text>
 			<Text color="#550011">Custom color from HEX</Text>
 			<Text color="rgba(30, 130, 230, 1)">Custom color from RGBA</Text>
+
+			<h2>Color Palette</h2>
+			<p>Each of these colors can be used in any Text component...</p>
+			<ColorPalette />
 		</div>
 	)
 }
