@@ -38,7 +38,7 @@ export default function Demo() {
 			<div>COMING SOON!!1</div>
 
 			<h2>Alerts & Messages</h2>
-			<Alert>This is a default alert</Alert>
+			<Alert>This is the default alert</Alert>
 			<Alert variant="info">This is an "info" alert</Alert>
 			<Alert variant="help">This is a "help" alert</Alert>
 			<Alert variant="warning">This is a "warning" alert</Alert>

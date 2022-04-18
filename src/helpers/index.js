@@ -1,10 +1,11 @@
-export function getValue(property, psuedoSelector) {
+export function getValue(component, property, psuedoSelector) {
 	if (psuedoSelector) {
 		return ({ variant, theme }) =>
-			theme[variant]?.[psuedoSelector]?.[property] ||
-			theme.default[psuedoSelector][property]
+			theme[component]?.[variant]?.[psuedoSelector]?.[property] ||
+			theme[component].default[psuedoSelector][property]
 	}
 
 	return ({ variant, theme }) =>
-		theme[variant]?.[property] || theme.default[property]
+		theme[component]?.[variant]?.[property] ||
+		theme[component].default[property]
 }

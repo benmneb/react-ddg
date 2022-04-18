@@ -10,8 +10,8 @@ const Message = styled.div`
 	position: relative;
 	margin: 0.5em auto 1.25em;
 	padding: 1em;
-	color: ${getValue('color')};
-	background-color: ${getValue('backgroundColor')};
+	color: ${getValue('alert', 'color')};
+	background-color: ${getValue('alert', 'backgroundColor')};
 `
 
 export default function Alert({ children, variant, ...props }) {
