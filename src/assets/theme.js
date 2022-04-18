@@ -1,6 +1,7 @@
 import * as palette from './palette'
 
 export const theme = {
+	// Buttons
 	default: {
 		// common among all
 		display: 'inline-block',
@@ -108,5 +109,20 @@ export const theme = {
 		display: 'inline',
 		lineHeight: 'inherit',
 		padding: '0 0.75em',
+	},
+
+	// Alerts
+
+	info: {
+		backgroundColor: '#ffe7c9',
+		color: '#a97022',
+	},
+	help: {
+		color: '#002179',
+		backgroundColor: '#d0e5f4',
+	},
+	warning: {
+		color: '#de5833',
+		backgroundColor: '#f7d5cc',
 	},
 }

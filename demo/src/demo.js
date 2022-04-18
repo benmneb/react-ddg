@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Button, ButtonGroup } from '../../src'
+import { Alert, Button, ButtonGroup } from '../../src'
 
 export default function Demo() {
 	return (
@@ -33,6 +33,15 @@ export default function Demo() {
 				<Button variant="secondary">Cancel</Button>
 				<Button variant="critical">Delete</Button>
 			</ButtonGroup>
+
+			<h2>Icons</h2>
+			<div>COMING SOON!!1</div>
+
+			<h2>Alerts & Messages</h2>
+			<Alert>This is a default alert</Alert>
+			<Alert variant="info">This is an "info" alert</Alert>
+			<Alert variant="help">This is a "help" alert</Alert>
+			<Alert variant="warning">This is a "warning" alert</Alert>
 		</div>
 	)
 }
