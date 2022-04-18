@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Alert, Button, ButtonGroup } from '../../src'
+import { Alert, Button, ButtonGroup, Text } from '../../src'
 
 export default function Demo() {
 	return (
@@ -42,6 +42,40 @@ export default function Demo() {
 			<Alert variant="info">This is an "info" alert</Alert>
 			<Alert variant="help">This is a "help" alert</Alert>
 			<Alert variant="warning">This is a "warning" alert</Alert>
+
+			<h2>Text</h2>
+			<h3>Headings</h3>
+			<Text component="h1">XXL Heading (h1)</Text>
+			<Text component="h2">XL Heading (h2)</Text>
+			<Text component="h3">L Heading (h3)</Text>
+			<Text component="h4">M Heading (h4)</Text>
+			<Text component="h5">S Heading (h5)</Text>
+			<Text component="h6">XS Heading (h6)</Text>
+			<h3>Text</h3>
+			<Text size="xxxxl">XXXXL Text</Text>
+			<Text size="xxxl">XXXL Text</Text>
+			<Text size="xxl">XXL Text</Text>
+			<Text size="xl">XL Text</Text>
+			<Text size="l">L Text</Text>
+			<Text>M Text</Text>
+			<Text size="s">S Text</Text>
+			<Text size="xs">XS Text</Text>
+			<Text size="xxs">XXS Text</Text>
+			<Text size="xxxs">XXXS Text</Text>
+			<h3>Colors</h3>
+			<Text>Primary</Text>
+			<Text color="primaryAlt">PrimaryAlt</Text>
+			<Text color="secondary">Secondary</Text>
+			<Text color="secondaryAlt">SecondaryAlt</Text>
+			<br />
+			<Text color="gold">Gold!</Text>
+			<Text color="purple">Purple!</Text>
+			<Text color="green">Green!</Text>
+			<Text color="redDark">Red Dark!</Text>
+			<br />
+			<Text color="papayawhip">Custom color from string</Text>
+			<Text color="#550011">Custom color from HEX</Text>
+			<Text color="rgba(30, 130, 230, 1)">Custom color from RGBA</Text>
 		</div>
 	)
 }

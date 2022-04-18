@@ -129,4 +129,25 @@ export const theme = {
 			backgroundColor: '#f7d5cc',
 		},
 	},
+	text: {
+		color: {
+			primary: palette.slate,
+			primaryAlt: palette.slateLight,
+			secondary: palette.greyDark,
+			secondaryAlt: palette.greyLight,
+			...palette,
+		},
+		fontSize: {
+			xxxxl: '3em',
+			xxxl: '2em',
+			xxl: '1.75em',
+			xl: '1.5em',
+			l: '1.33em',
+			m: '1.1667em',
+			s: '0.9176em',
+			xs: '0.8333em',
+			xxs: '0.75em',
+			xxxs: '0.66em',
+		},
+	},
 }
