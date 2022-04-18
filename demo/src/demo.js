@@ -1,11 +1,12 @@
 import React from 'react'
 
-import { Button } from '../../src'
+import { Button, ButtonGroup } from '../../src'
 
 export default function Demo() {
 	return (
 		<div>
 			<h1>ReactDDGStyles</h1>
+
 			<h2>Buttons</h2>
 			<Button>Default</Button>
 			<Button variant="alternate">Alternate</Button>
@@ -15,7 +16,23 @@ export default function Demo() {
 			<Button variant="primaryAlt">Primary Alt</Button>
 			<Button variant="critical">Critical</Button>
 			<Button variant="secondary">Secondary</Button>
+
 			<h2>Button Groups</h2>
+			<ButtonGroup>
+				<Button>One</Button>
+				<Button>Two</Button>
+				<Button>Three</Button>
+			</ButtonGroup>
+			<ButtonGroup>
+				<Button variant="primary">First</Button>
+				<Button variant="primary">Second</Button>
+				<Button variant="primary">Third</Button>
+				<Button variant="primary">Fourth</Button>
+			</ButtonGroup>
+			<ButtonGroup>
+				<Button variant="secondary">Cancel</Button>
+				<Button variant="critical">Delete</Button>
+			</ButtonGroup>
 		</div>
 	)
 }
