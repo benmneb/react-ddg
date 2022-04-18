@@ -24,5 +24,5 @@ export default function Alert({ children, variant, ...props }) {
 
 Alert.propTypes = {
 	children: PropTypes.string.isRequired,
-	variant: PropTypes.string.isRequired,
+	variant: PropTypes.string,
 }
