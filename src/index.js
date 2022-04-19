@@ -2,4 +2,4 @@ export { ThemeProvider } from 'styled-components'
 
 export { theme } from './assets/theme'
 
-export { Alert, Button, ButtonGroup, Text } from './components'
+export { Alert, Button, ButtonGroup, Icon, Text } from './components'

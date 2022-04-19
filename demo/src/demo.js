@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { ColorPalette } from './components'
+import { ColorPalette, IconsDisplay } from './components'
 import { Alert, Button, ButtonGroup, Text } from '../../src'
 
 export default function Demo() {
@@ -36,7 +36,7 @@ export default function Demo() {
 			</ButtonGroup>
 
 			<h2>Icons</h2>
-			<div>COMING SOON!!1</div>
+			<IconsDisplay />
 
 			<h2>Alerts & Messages</h2>
 			<Alert>This is the default alert</Alert>
@@ -46,12 +46,12 @@ export default function Demo() {
 
 			<h2>Text</h2>
 			<h3>Headings</h3>
-			<Text component="h1">XXL Heading (h1)</Text>
-			<Text component="h2">XL Heading (h2)</Text>
-			<Text component="h3">L Heading (h3)</Text>
-			<Text component="h4">M Heading (h4)</Text>
-			<Text component="h5">S Heading (h5)</Text>
-			<Text component="h6">XS Heading (h6)</Text>
+			<Text component="h1">h1 Heading</Text>
+			<Text component="h2">h2 Heading</Text>
+			<Text component="h3">h3 Heading</Text>
+			<Text component="h4">h4 Heading</Text>
+			<Text component="h5">h5 Heading</Text>
+			<Text component="h6">h6 Heading</Text>
 			<h3>Text</h3>
 			<Text size="xxxxl">XXXXL Text</Text>
 			<Text size="xxxl">XXXL Text</Text>
@@ -64,22 +64,25 @@ export default function Demo() {
 			<Text size="xxs">XXS Text</Text>
 			<Text size="xxxs">XXXS Text</Text>
 			<h3>Colors</h3>
+			<p>Default text colors</p>
 			<Text>Primary</Text>
 			<Text color="primaryAlt">PrimaryAlt</Text>
 			<Text color="secondary">Secondary</Text>
 			<Text color="secondaryAlt">SecondaryAlt</Text>
 			<br />
+			<p>Any color from the color palette can be used here.</p>
 			<Text color="gold">Gold!</Text>
 			<Text color="purple">Purple!</Text>
 			<Text color="green">Green!</Text>
 			<Text color="redDark">Red Dark!</Text>
 			<br />
+			<p>Any custom color can be used as well.</p>
 			<Text color="papayawhip">Custom color from string</Text>
 			<Text color="#550011">Custom color from HEX</Text>
 			<Text color="rgba(30, 130, 230, 1)">Custom color from RGBA</Text>
 
 			<h2>Color Palette</h2>
-			<p>Each of these colors can be used in any Text component...</p>
+			<p>These are the default colours exposed in the theme object.</p>
 			<ColorPalette />
 		</div>
 	)

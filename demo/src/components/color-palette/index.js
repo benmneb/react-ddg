@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { defaultPalette } from './default-palette'
+import { defaultPalette } from '../../assets'
 import { Text } from '../../../../src'
 
 const Grid = styled.div`

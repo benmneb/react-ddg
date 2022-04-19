@@ -28,7 +28,7 @@ import {
 	slateBlue,
 	slateLightBlue,
 	greyBlue,
-} from '../../../../src/assets/palette'
+} from '../../../src/assets/palette'
 
 export const defaultPalette = [
 	{ white },
