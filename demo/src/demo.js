@@ -1,7 +1,15 @@
 import React from 'react'
 
 import { ColorPalette, IconsDisplay } from './components'
-import { Alert, Button, ButtonGroup, Text } from '../../src'
+import {
+	Alert,
+	Button,
+	ButtonGroup,
+	Checkbox,
+	Text,
+	TextField,
+	TextArea,
+} from '../../src'
 
 export default function Demo() {
 	return (
@@ -84,6 +92,24 @@ export default function Demo() {
 			<h2>Color Palette</h2>
 			<p>These are the default colours exposed in the theme object.</p>
 			<ColorPalette />
+
+			<h2>Inputs & Forms</h2>
+			<h3>Inputs</h3>
+			<TextField placeholder="Default text field" />
+			<TextField placeholder="Clearable text field" clearable />
+			<TextArea placeholder="Textarea" />
+			<TextArea placeholder="Textarea with resize='none'" resize="none" />
+			<Checkbox />
+			<Checkbox label="Checkbox with label" />
+			<Checkbox
+				size="xxxxl"
+				label={
+					<Text component="span" color="gold">
+						Checkbox with custom label
+					</Text>
+				}
+			/>
+			<h3>Form example</h3>
 		</div>
 	)
 }
